@@ -1,0 +1,314 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FAFAFA;
+  padding: 60px 20px;
+  font-size: 16px;
+  
+}
+
+.obrazek {
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.nadpis {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 40px auto 30px auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #407BFF;
+  border-spacing: 60px;
+}
+
+.uvod {
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+}
+
+.tlacitka {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+}
+
+.modry {
+  background-color: #407BFF;
+  font-weight: 400;
+  width: 195px;
+  height: 40px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 30px auto 10px auto; 
+ }
+
+.sedy {
+  background-color:#8B8B8B;
+  font-weight: 400;
+  width: 220px;
+  height: 40px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin: 0 auto 60px auto;
+}
+
+.sluzby-kancelare {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.text {
+  text-align: center;
+  font-weight: 300;
+  margin: 0 auto 30px auto;
+}
+
+.naplanujeme,
+.zajistime,
+.sezeneme,
+.doporucime,
+.objedname,
+.pronajmeme {
+  position: relative;
+  font-weight: 300;
+  padding: 30px 20px 30px 94px;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #3d3f441f;
+  background-color: white;
+}
+
+.zajezdy,
+.destinace,
+.letenky,
+.zajezd,
+.lehatka,
+.vuz {
+  font-size: 13px;
+  margin: 0;
+}
+
+.mapa,
+.kaktus,
+.letadlo,
+.palma,
+.slunecnik,
+.karavan {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.sluzby-delegat{
+  margin: 60px auto 15px auto;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.text-delegat {
+  text-align: center;
+  font-weight: 300;
+  margin: 0 auto 30px auto;
+}
+
+@media screen and (min-width: 640px) {
+
+  .obrazek {
+    display: flex;
+    margin: 0 auto 30px auto;
+    min-height: 185px;
+  }
+
+  .nadpis {
+    margin: 30px auto 40px auto;
+  }
+  .uvod {
+    margin: 0 110px 30px 110px;
+  }
+  .tlacitka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modry {
+    margin: 0 20px 0 0;
+  }
+  .sedy {
+    margin: 0;
+  }
+
+  .sluzby-kancelare {
+    margin: 80px auto;
+  }
+
+  .text {
+    margin: 20px 110px 40px 110px;
+  }
+
+  .ikony,
+  .ikony2 {
+    display: flex;
+  }
+
+  .naplanujeme,
+  .zajistime,
+  .sezeneme,
+  .doporucime,
+  .objedname,
+  .pronajmeme {
+    flex: 1 1 calc(100% / 3);
+    position: relative;
+    padding: 100px 15px 20px 15px;
+    margin: 0 20px 0 0;
+  }
+  .sezeneme,
+  .pronajmeme  {
+    margin: 0;
+  }
+  .zajezdy,
+  .destinace,
+  .letenky,
+  .zajezd,
+  .lehatka,
+  .vuz {
+    text-align: center;
+  }
+
+  .mapa,
+  .kaktus,
+  .letadlo,
+  .palma,
+  .slunecnik,
+  .karavan {
+    position: absolute;
+    display: flex;
+    left: 95px;
+    top: 40px;
+  }
+  .sluzby-delegat {
+    margin: 80px auto;
+  }
+  .text-delegat {
+    margin: 20px 110px 40px 110px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  
+  .body {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  .sekce1 {
+    display: flex;
+    padding-bottom: 0;
+  }
+
+  .sekce-uvod {
+    flex: 1 1 490px;
+    order: 1;
+    margin-right: 60px;
+    padding: 130px 94px 70px 80px;
+
+  }
+  .nadpis {
+    text-align: left;
+  }
+
+  .uvod {
+    margin: 40px 0 30px 0;
+    text-align: left;
+  }
+
+  .tlacitka {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .sekce-obrazek {
+    
+    order: 2;
+    padding: 60px 110px 0 0;
+  }
+
+  .obrazek {
+    min-width: 425px;
+    min-height: 353px;
+    margin: 0 auto;
+  }
+
+  .sekce2 {
+    margin-top: 80px;
+    display: flex;
+    padding: 0 80px;
+  }
+
+  .sekce-ikony {
+    flex: 1 1 550px;
+    margin-top: 0;
+  }
+
+  .sluzby-kancelare {
+    flex: 1 1 430px;
+    margin: 0 0 17px 0px;
+    text-align: left;
+  }
+  .text {
+    text-align: left;
+    margin: 0;
+  }
+  .sekce-kancelare {
+    order: 2;
+    margin-top: 40px;
+    margin-left: 60px;
+    flex: 0 0 430px;
+  }
+
+  .sekce3 {
+    display: flex;
+    margin-top: 80px;
+    padding: 0 80px;
+  }
+  .sluzby-delegat {
+    margin: 0 0 17px 0;
+    text-align: left;
+  }
+
+  .text-delegat {
+    margin: 0;
+    text-align: left;
+  }
+
+  .sekce-delegat {
+    flex: 1 1 430px;
+    margin-top: 40px;
+    margin-right: 60px;
+  }
+
+  .sekce-ikony2 {
+    flex: 1 1 550px;
+    margin-left: 0;
+  }
+
+  .mapa,
+  .kaktus,
+  .letadlo,
+  .palma,
+  .slunecnik,
+  .karavan {
+    position: absolute;
+    left: 62px;
+    top: 40px;
+  }
+}
