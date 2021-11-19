@@ -4,13 +4,14 @@ html { box-sizing: border-box; }
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #FAFAFA;
-  padding: 60px 20px;
   font-size: 16px;
   
 }
 
 .obrazek {
   display: flex;
+  width: 100%;
+  max-width: 350px;
   margin: 0 auto;
   
 }
@@ -77,34 +78,22 @@ body {
 .doporucime,
 .objedname,
 .pronajmeme {
-  position: relative;
+  display: flex;
   font-weight: 300;
-  padding: 30px 20px 30px 94px;
+  padding: 45px 20px 20px 20px;
   margin: 0 auto 15px auto;
   border-radius: 10px;
   box-shadow: 0px 4px 6px #3d3f441f;
   background-color: white;
 }
 
-.zajezdy,
-.destinace,
-.letenky,
-.zajezd,
-.lehatka,
-.vuz {
+.text-box{
   font-size: 13px;
-  margin: 0;
+  margin-left: 30px;
 }
 
-.mapa,
-.kaktus,
-.letadlo,
-.palma,
-.slunecnik,
-.karavan {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+.img-ikona {
+  justify-content: center;
 }
 
 .sluzby-delegat{
@@ -125,7 +114,7 @@ body {
   .obrazek {
     display: flex;
     margin: 0 auto 30px auto;
-    min-height: 185px;
+    max-width: 400px;
   }
 
   .nadpis {
@@ -157,6 +146,7 @@ body {
   .ikony,
   .ikony2 {
     display: flex;
+    flex: 1 1 calc(100% / 3);
   }
 
   .naplanujeme,
@@ -165,35 +155,26 @@ body {
   .doporucime,
   .objedname,
   .pronajmeme {
-    flex: 1 1 calc(100% / 3);
-    position: relative;
-    padding: 100px 15px 20px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px 20px 15px;
     margin: 0 20px 0 0;
   }
   .sezeneme,
   .pronajmeme  {
     margin: 0;
   }
-  .zajezdy,
-  .destinace,
-  .letenky,
-  .zajezd,
-  .lehatka,
-  .vuz {
+
+  .img-ikona {
+    margin: auto;
+    width: 45px;
+  }
+
+  .text-box{
+    align-items: flex-end;
     text-align: center;
   }
 
-  .mapa,
-  .kaktus,
-  .letadlo,
-  .palma,
-  .slunecnik,
-  .karavan {
-    position: absolute;
-    display: flex;
-    left: 95px;
-    top: 40px;
-  }
   .sluzby-delegat {
     margin: 80px auto;
   }
@@ -203,9 +184,13 @@ body {
 }
 
 @media screen and (min-width: 1100px) {
-  
+
   .body {
-    width: 1040px;
+    padding: 0 ;
+  }
+
+  .projekt {
+    max-width: 1040px;
     margin: 0 auto;
   }
 
@@ -217,8 +202,7 @@ body {
   .sekce-uvod {
     flex: 1 1 490px;
     order: 1;
-    margin-right: 60px;
-    padding: 130px 94px 70px 80px;
+    padding: 130px 94px 70px 0;
 
   }
   .nadpis {
@@ -237,78 +221,80 @@ body {
   }
 
   .sekce-obrazek {
-    
     order: 2;
-    padding: 60px 110px 0 0;
+    padding: 60px 0 0 0;
   }
 
   .obrazek {
-    min-width: 425px;
-    min-height: 353px;
+    width: 425px;
+    height: 353px;
     margin: 0 auto;
   }
 
-  .sekce2 {
+  .sekce2,
+  .sekce3 {
     margin-top: 80px;
     display: flex;
-    padding: 0 80px;
   }
 
-  .sekce-ikony {
-    flex: 1 1 550px;
+  .sekce3 {
+    margin-bottom: 60px;
+  }
+
+  .sekce-ikony,
+  .sekce-ikony2 {
+    flex: 1 0 550px;
     margin-top: 0;
+    display: flex;
   }
 
-  .sluzby-kancelare {
-    flex: 1 1 430px;
-    margin: 0 0 17px 0px;
-    text-align: left;
+  .naplanujeme,
+  .zajistime,
+  .sezeneme,
+  .doporucime,
+  .objedname,
+  .pronajmeme {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 20px 0 0;
+    justify-content: center;
   }
-  .text {
-    text-align: left;
+  .sezeneme,
+  .pronajmeme  {
     margin: 0;
   }
+
+  .img-ikona {
+    margin: auto;
+    padding-top: 40px;
+    width: 45px;
+  }
+
+  .text-box {
+    margin: 0;
+    padding: 20px 15px;
+  }
+
+  .sekce-delegat {
+    margin: 40px 60px 0 0;
+  }
+
   .sekce-kancelare {
     order: 2;
     margin-top: 40px;
     margin-left: 60px;
-    flex: 0 0 430px;
   }
 
-  .sekce3 {
-    display: flex;
-    margin-top: 80px;
-    padding: 0 80px;
-  }
+  .sluzby-kancelare,
   .sluzby-delegat {
-    margin: 0 0 17px 0;
+    margin: 0 0 17px 0px;
     text-align: left;
   }
-
+  .text,
   .text-delegat {
-    margin: 0;
     text-align: left;
+    margin: 0;
   }
-
-  .sekce-delegat {
-    flex: 1 1 430px;
-    margin-top: 40px;
-    margin-right: 60px;
-  }
-
-  .sekce-ikony2 {
-    flex: 1 1 550px;
-    margin-left: 0;
-  }
-
-  .mapa,
-  .kaktus,
-  .letadlo,
-  .palma,
-  .slunecnik,
-  .karavan {
-    position: absolute;
-    left: 62px;
-    top: 40px;
-  }
+    
 }
