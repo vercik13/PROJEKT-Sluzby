@@ -20,16 +20,20 @@ body {
   text-align: center;
   font-size: 28px;
   font-weight: 500;
-  margin: 40px auto 30px auto;
-  padding-bottom: 10px;
+  margin: 40px auto 10px auto;
+  
+}
+
+.line {
   border-bottom: 2px solid #407BFF;
-  border-spacing: 60px;
+  width: 60px;
+  margin: 0 auto; 
 }
 
 .uvod {
   text-align: center;
   font-weight: 300;
-  margin: 0;
+  margin: 30px 0 0 0;
 }
 
 .tlacitka {
@@ -72,15 +76,10 @@ body {
   margin: 0 auto 30px auto;
 }
 
-.naplanujeme,
-.zajistime,
-.sezeneme,
-.doporucime,
-.objedname,
-.pronajmeme {
+.box {
   display: flex;
   font-weight: 300;
-  padding: 45px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   margin: 0 auto 15px auto;
   border-radius: 10px;
   box-shadow: 0px 4px 6px #3d3f441f;
@@ -110,6 +109,9 @@ body {
 }
 
 @media screen and (min-width: 640px) {
+  .projekt {
+    padding: 60px 0 60px 0;
+  }
 
   .obrazek {
     display: flex;
@@ -118,10 +120,11 @@ body {
   }
 
   .nadpis {
-    margin: 30px auto 40px auto;
+    margin: 30px auto 10px auto;
   }
+
   .uvod {
-    margin: 0 110px 30px 110px;
+    margin: 40px 110px 30px 110px;
   }
   .tlacitka {
     display: flex;
@@ -136,7 +139,7 @@ body {
   }
 
   .sluzby-kancelare {
-    margin: 80px auto;
+    margin: 80px auto 20px auto;
   }
 
   .text {
@@ -149,22 +152,13 @@ body {
     flex: 1 1 calc(100% / 3);
   }
 
-  .naplanujeme,
-  .zajistime,
-  .sezeneme,
-  .doporucime,
-  .objedname,
-  .pronajmeme {
+  .box {
     display: flex;
     flex-direction: column;
     padding: 40px 15px 20px 15px;
     margin: 0 20px 0 0;
   }
-  .sezeneme,
-  .pronajmeme  {
-    margin: 0;
-  }
-
+ 
   .img-ikona {
     margin: auto;
     width: 45px;
@@ -176,7 +170,7 @@ body {
   }
 
   .sluzby-delegat {
-    margin: 80px auto;
+    margin: 80px auto 20px auto;
   }
   .text-delegat {
     margin: 20px 110px 40px 110px;
@@ -207,6 +201,9 @@ body {
   }
   .nadpis {
     text-align: left;
+  }
+  .line {
+    margin-left: 0;
   }
 
   .uvod {
@@ -248,23 +245,14 @@ body {
     display: flex;
   }
 
-  .naplanujeme,
-  .zajistime,
-  .sezeneme,
-  .doporucime,
-  .objedname,
-  .pronajmeme {
+  .box {
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0 20px 0 0;
     justify-content: center;
   }
-  .sezeneme,
-  .pronajmeme  {
-    margin: 0;
-  }
-
+  
   .img-ikona {
     margin: auto;
     padding-top: 40px;
@@ -295,6 +283,5 @@ body {
   .text-delegat {
     text-align: left;
     margin: 0;
-  }
-    
+  }    
 }
